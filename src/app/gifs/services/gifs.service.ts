@@ -11,7 +11,7 @@ import { Gif, SearchRespose } from '../interfaces/gifs.interfaces';
 export class GifsService {
   public gifList: Gif[] = []; // Almacena los GIFs obtenidos de la búsqueda actual
   private _tagHistory: string[] = []; // Historial privado de etiquetas (tags) buscadas
-  private GHIPHY_APY_KEY: string = 'wK4ddnY5KVgeNqMYiUndqSPE6c4efWQA'; // Clave API de Giphy
+  private GHIPHY_APY_KEY: string = '*********************************'; // Clave API de Giphy
   private serviceURL: string = 'https://api.giphy.com/v1/gifs'; // URL base del servicio Giphy
 
   // Constructor del servicio, inyecta el cliente HTTP de Angular
