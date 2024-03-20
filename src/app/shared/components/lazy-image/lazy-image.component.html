@@ -1,0 +1,6 @@
+<div class="d-flex justify-content-center">
+    <img src="/assets/loader.svg" alt="loading" class="card-img-top " style="width: 100%;aspect-ratio: 16/9;" *ngIf="!hasLoaded" >
+
+    <img [src]="url" [alt]="alt" class="card-img-top animate__animated animate__fadeIn " style="width: 100%;aspect-ratio: 16/9;" (load)="onLoad()"   [ngStyle]="{display: hasLoaded?'':'none'}" >
+
+</div>

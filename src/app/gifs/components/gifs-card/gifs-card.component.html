@@ -1,0 +1,8 @@
+
+    <div class="card mb-2 text-center bg-dark">
+      <shared-lazy-image class="text-white" [url]="gifInput.images.downsized_medium.url" [alt]="gifInput.title"></shared-lazy-image>
+      <!-- <img [src]="gifInput.images.downsized_medium.url" [alt]="gifInput.title" class="card-img-top" style="width: 100%;aspect-ratio: 16/9;"> -->
+      <div class="card-body text-white">
+        <p class="card-text">{{gifInput.title || "Not Tittle"}}</p>
+      </div>
+    </div>
